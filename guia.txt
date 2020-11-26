@@ -1,0 +1,52 @@
+BIENVENIDOS A ESTE ARCHIVO DE TEXTO CON EL QUE TRABAJAREMOS USANDO get_digit
+Gracias por su atencion
+
+Hay tres ramas en GIT: Master, development y hotfix
+
+COMANDOS DE GIT:
+git init: inicializar un repositorio
+git status: Ver el status del proyecto
+
+git add *nombre de archivo*: hacer tracked a un archivo
+git add .: "add ." sirve para añadir todos los archivos del directorio
+git commit -am "mensaje": hago commit de archivos sin necesidad de hacer add de nuevo(solo sirve para archivos trackeados alguna ve)
+
+git rm *nombre de archivo*: hacer cached el archivo del area de trabajo
+git rm --cached *nombre de archivo*: remover el archivo del repositorio (volverlo untracked)
+
+git commit: enviar los cambios al repositorio 
+git commit -m: enviar los cambios al repositorio y dejar un mensaje
+
+git config: ver todas las configuraciones que trae git
+git config --list: configuracion por defecto de git
+git config --list --show-origin: Ubicaciones de las configuraciones
+git config --global: configuraciones globales
+git config --global user.name "aqui_va_el_username": Cambiar el nombre de usuario
+git config --global user.email "aqui_va_el_email": Cambiar el email de usuario
+
+git log *nombre de archivo*: ver detalles de los commits que se han hecho en el archivo
+    git log --stat: cambios especificos a partir del commit
+git show *nombre de archivo*: ver cambios que ha sufrido un archivo
+
+git diff: ver diferencias entre el directorio actual y el staging area
+git diff *codigo de commit 1* *codigo de commit 2*: diferencias entre commits
+
+git reset *codigo de commit* (hard/soft): restaurar a una version anterior usando el codigo del commit que se usó
+    git reset *codigo* --hard: restaurar quitando el archivo del staging area
+    git reset *codigo* --soft: restaurar conservando el archivo en el staging area
+
+git checkout *codigo commit* *archivo*: reestablecer un archivo especifico a una version anteior mediante commit
+git checkout master *nombre de archiv*: restablecer a la version master del archivo
+git checkout *nombre de la rama*: cambiar de rama de desarrollo
+
+git branch *nombre de la rama*: crear una nueva rama de desarrollo
+
+git merge *nombre de la rama que quieres fusionar a la actual*: Tengo que revisar BIEN en que rama me encuentro
+    -YA QUE PUEDO GENERAR conflictos en el desarrollo, ya que si hago el merge de master hacia una rama 
+    -secundaria, la rama secundaria se volvería la principal
+
+
+
+
+
+
