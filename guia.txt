@@ -45,6 +45,9 @@ git merge *nombre de la rama que quieres fusionar a la actual*: Tengo que revisa
     -YA QUE PUEDO GENERAR conflictos en el desarrollo, ya que si hago el merge de master hacia una rama 
     -secundaria, la rama secundaria se volvería la principal
 
+git remote add origin *url del repo*: le damos al proyecto un origen remoto
+
+
 
 
 
